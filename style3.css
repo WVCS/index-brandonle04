@@ -33,11 +33,11 @@ h2{
   font-size: 30px;
 }
 .navbar a:hover {
-  background-color: green;
+  background-color: #545C52;
 }
 body{
   
-  background-color: white;
+  background-color: #EEE4E1;
 }
 
 table {

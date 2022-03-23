@@ -1,0 +1,81 @@
+.navbar{
+ 
+  background-color: grey;
+  overflow: hidden;
+  display: block;
+  top: 10;
+  border: 3px black solid;
+ 
+}
+
+.navbar a{
+  
+  text-decoration: none;
+  color: black;
+  float: right;
+  padding: 10px 44px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: calibri;
+  
+}
+
+.h2{
+  font-weight: bold;
+}
+
+tr, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+.wrapper{
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "A A" auto
+    "B C"
+    "D E"
+    "G G"
+    "F F";
+  grid-template-columns: 49% 49%;
+  grid-template-rows: 19% 19% 19% 19% 19%;
+  grid-row-gap: 5%;
+  grid-column-gap: 2%;
+}
+div{
+  background-color: antiquewhite;
+  border: solid 1px gray;
+}
+
+.A{
+  grid-area: 1 / 1 / span 2 / span 2;
+  font-size: 20px;
+}  /*row line / column line / span rows / span columns */
+.B{
+ grid-area: 3 / 1 / span 4 / span 1;
+}
+.C{
+ grid-area: 3 / 2 / span 4 / span 1;
+}
+.D{
+ grid-area: 7 / 1 / span 4 / span 1;
+}
+.E{
+ grid-area: 7 / 2 / span 4 / span 1;
+}
+.G{
+ grid-area: 11 / 1 / span 4 / span 2;
+}
+.F{
+ grid-area: 15 / 1 / span 4 / span 2;
+}
+
+@media only screen and (max-width: 1024px){
+  .wrapper{
+     display: flex;
+    flex-wrap: wrap;
+  } 
+}
